@@ -1,0 +1,29 @@
+{
+  "name": "ecdsasecp256k1signaturesuite2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf lib &&  tsc",
+    "start:dev": "rimraf lib &&  tsc --watch "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.7",
+    "@types/node": "^20.8.10",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@hypersign-protocol/ecdsasecp256k1verificationkey2019": "github:hypersign-protocol/EcdsaSecp256k1VerificationKey2019",
+    "@keplr-wallet/cosmos": "^0.12.44",
+    "jsonld": "^8.3.1",
+    "jsonld-signatures": "^9.3.1",
+    "multibase": "^4.0.6",
+    "security-context": "^4.0.0"
+  }
+}
